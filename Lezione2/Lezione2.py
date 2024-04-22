@@ -353,6 +353,19 @@ for city in cities:
         print(key + ':', value,'\n')
 
 
+print("\nNew exercise\n")
 # 6-12. Extensions: We’re now working with examples that are complex enough that they can be extended in any number of ways.
 # Use one of the example programs from this chapter, and extend it by adding new keys and values,
 # changing the context of the program, or improving the formatting of the output.
+
+#scrivendo ogni soggetto di questo dizionario con un numero identificativo
+Team: dict = {'Alpha':1,'Bravo':2,"Charlie":3, 'Delta':4}
+
+for singles,quotes in Team.items():
+    print('il numero identificativo di {} è {}'.format(singles,quotes))
+
+print('\n')
+
+print(Team["Alpha"],Team["Bravo"],Team["Charlie"],Team["Delta"])
+
+print('\n')
