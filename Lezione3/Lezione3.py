@@ -98,10 +98,26 @@ print('\n new exercise \n')
 print('\n new exercise \n')
 #4-14. PEP 8: Look through the original PEP 8 style guide at https://peps.python.org/pep-0008/ You won’t use much of it now, but it might be interesting to skim through it.
 
-
 print('\n new exercise \n')
 #4-15. Code Review: Choose three of the programs you’ve written in this chapter and modify each one to comply with PEP 8.
+# programma 1 
+# Modified code
+pizzas = ['Margherita', 'Crostino', 'Patatine fritte e Wurstel']
+for pizza in pizzas:
+    print(pizza)
 
+sentence = 'Ordinerò una '
+
+for pizza in pizzas:
+    print(sentence, pizza)
+
+# programma 2
+for number in range(1, 21):
+    print(number)
+
+# programma 3
+for number in range(2, 22, 2):
+    print(number)
 
 print('\n new exercise \n')
 #5-1. Conditional Tests: Write a series of conditional tests. Print a statement
@@ -116,11 +132,71 @@ print('\n new exercise \n')
 #evaluates to True or False.
 #• Create at least 10 tests. Have at least 5 tests evaluate to True and another
 #5 tests evaluate to False.
+Car = 'Citroen'
+Model = 'C1'
+Color = 'White'
+print("is car  'Citroen'? I predict True." )
+print(Car == 'Citroen')
+
+print("is car 'Audi'? I predict False")
+print(Car == 'Audi')
+
+print("is Model 'C1'? I predict True")
+print(Model == 'C1')
+
+print("is Model 'C3'? I predict False")
+print(Model == 'C3')
+
+print("is Color 'White'? I predict True")
+print(Color == 'White')
+
+print("is Color 'Black'? I predict False")
+print(Color  == 'Black')
+
+print("is Color 'Yellow'? I predict False")
+print(Color == 'Yellow')
+
+print("is Color 'Green'? I predict False")
+print(Color == 'Green')
+
+print("is Model 'C2'? I predict False")
+print(Model == 'C2')
+
+print("is car 'BMW'? I predict False")
+print(Car == 'BMW')
 
 
 print('\n new exercise \n')
 #5-2. More Conditional Tests: You don’t have to limit the number of tests you cre-
 #ate to 10. If you want to try more comparisons, write more tests and add them
+Gbrand = 'Glock'
+Gmodel = '17'
+magazine = 9
+Gcaliber = '9mm'
+
+print("is brand Glock? I predict True")
+print(Gbrand == 'Glock')
+
+print('is it a Beretta? I predict False')
+print(Gbrand == 'Beretta')
+
+print('is a model 17? i predict True')
+print(Gmodel == '17')
+
+print('is a model 18? i predict False')
+print(Gmodel == '18')
+
+print('is magazine 9? i predict True')
+print(magazine == 9)
+
+print('is magazine 13? i predict False')
+print(magazine == 13)
+
+print('is caliber 9mm? i predict True')
+print(Gcaliber == '9mm')
+
+print('is caliber 12mm? i predict False')
+print(Gcaliber == '12mm')
 
 
 print('\n new exercise \n')
