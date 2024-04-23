@@ -47,7 +47,7 @@ c = city_country(name='Marseille',country=' France')
 print(a,'\n',b,'\n',c) 
 """
 #8-7. Album: Write a function called make_album() that builds a dictionary describing a music album. The function should take in an artist name and an album title, and it should return a dictionary containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that the  dictionaries are storing the album information correctly. Use None to add an optional parameter to make_album() that allows you to store the number of songs on an album. If the calling line includes a value for the number of songs, add that value to the album’s dictionary. Make at least one new function call that includes the number of songs on an album.
-
+"""
 def make_album(Artist,Album) -> dict:
     Music:dict = {Artist,Album}
     return Music
@@ -57,9 +57,10 @@ Alb02:dict = make_album('Salmo','Hellvisback')
 Alb03:dict = make_album('Noyz Narcos','Enemy')
 
 print(Alb01,'\n',Alb02,'\n',Alb03)
-
+"""
+"""
 def make_album2(Artist2,Album2,Nsong = None) -> dict:
-    Music2:dict = {Artist2,Album2,Nsong}
+    Music2:dict = {'Artist: ': Artist2,'Album: ': Album2,'Songs: ': Nsong}
     return Music2
 
 alb01:dict = make_album2('Mostro','Ogni maledetto giorno',10)
@@ -67,11 +68,26 @@ alb02:dict = make_album2('Salmo','Hellvisback',15)
 alb03:dict = make_album2('Noyz Narcos','Enemy',7)
 
 print(alb01,'\n',alb02,'\n',alb03)
+"""
 #8-8. User Albums: Start with your program from Exercise 8-7. Write a while loop that allows users to enter an album’s artist and title. Once you have that information, call make_album() with the user’s input and print the dictionary that’s created. Be sure to include a quit value in the while loop.
+"""
+user: dict = {}
 
-
+i = 1
+while i<3:
+    i+=1
+    user = make_album2(Artist2=input('inserisci artista: '),Album2=input('inserisci album: '),Nsong=input('inserisci il numero di canzoni: '))
+    print(user)
+"""
 
 #8-9. Messages: Make a list containing a series of short text messages. Pass the list to a function called show_messages(), which prints each text message.
+Messages: list = ['Never give up','Just do it','Life is one']
+
+def show_messages(l):
+    for message in l:
+        print(message)
+show_messages(Messages)
+
 #8-10. Sending Messages: Start with a copy of your program from Exercise 8-9. Write a function called send_messages() that prints each text message and moves each message to a new list called sent_messages as it’s printed. After calling the function, print both of your lists to make sure the messages were moved correctly.
 
 #8-11. Archived Messages: Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list of messages. After calling the function, print both of your lists to show that the original list has retained its messages.
@@ -84,4 +100,4 @@ print(alb01,'\n',alb02,'\n',alb03)
 
 #8-15. Printing Models: Put the functions for the example printing_models.py in a separate file called printing_functions.py. Write an import statement at the top of printing_models.py, and modify the file to use the imported functions.
 #8-16. Imports: Using a program you wrote that has one function in it, store that function in a separate file. Import the function into your main program file, and call the function using each of these approaches: import module_name from module_name import function_name from module_name import function_name as fn import module_name as mn from module_name import *
-#8-17. Styling Functions: Choose any three programs you wrote for this chapter, and make sure they follow the styling guidelines described in this section.
+#8-17. Styling Functions: Choose any three programs you wrote for this chapter, and make sure they follow the styling guidelines described in this section
