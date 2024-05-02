@@ -81,14 +81,21 @@ while i<3:
 """
 
 #8-9. Messages: Make a list containing a series of short text messages. Pass the list to a function called show_messages(), which prints each text message.
+"""
 Messages: list = ['Never give up','Just do it','Life is one']
 
 def show_messages(l):
     for message in l:
         print(message)
 show_messages(Messages)
-
+"""
 #8-10. Sending Messages: Start with a copy of your program from Exercise 8-9. Write a function called send_messages() that prints each text message and moves each message to a new list called sent_messages as it’s printed. After calling the function, print both of your lists to make sure the messages were moved correctly.
+
+
+
+
+
+
 
 #8-11. Archived Messages: Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list of messages. After calling the function, print both of your lists to show that the original list has retained its messages.
 
@@ -101,3 +108,32 @@ show_messages(Messages)
 #8-15. Printing Models: Put the functions for the example printing_models.py in a separate file called printing_functions.py. Write an import statement at the top of printing_models.py, and modify the file to use the imported functions.
 #8-16. Imports: Using a program you wrote that has one function in it, store that function in a separate file. Import the function into your main program file, and call the function using each of these approaches: import module_name from module_name import function_name from module_name import function_name as fn import module_name as mn from module_name import *
 #8-17. Styling Functions: Choose any three programs you wrote for this chapter, and make sure they follow the styling guidelines described in this section
+
+# Funzione Bubble sort
+
+def bubble_sort(v) -> list:
+    v = [1,3,2,6,4,8,7,5]
+    for i in range(len(v)):
+        for j in range(len(v) - 1):
+            if v[j] > v[j+1]:
+                temp: int = v[j]
+                v[j] = v[j+1]
+                v[j+1] = temp
+    return v
+
+
+v = [1,3,2,6,4,8,7,5]
+print(bubble_sort(v))
+
+def bubble_sort2():
+    c = list(range(1000001,1))
+    for i in range(len(c)):
+        for j in range(len(c) - 1):
+            if c[j] < c[j+1]:
+                temp: int = c[j]
+                c[j] = c[j+1]
+                c[j+1] = temp
+    return c
+
+c = list(range(1000001,1))
+print(bubble_sort2(c))
