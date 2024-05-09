@@ -81,11 +81,6 @@ while i<3:
 """
 
 #8-9. Messages: Make a list containing a series of short text messages. Pass the list to a function called show_messages(), which prints each text message.
-<<<<<<< HEAD
-=======
-#8-10. Sending Messages: Start with a copy of your program from Exercise 8-9. Write a function called send_messages() that prints each text message and moves each message to a new list called sent_messages as it’s printed. After calling the function, print both of your lists to make sure the messages were moved correctly.
-#8-11. Archived Messages: Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list of messages. After calling the function, print both of your lists to show that the original list has retained its messages.
->>>>>>> 276967285c9be473fbb443d984d22a8c2511ceeb
 """
 Messages: list = ['Never give up','Just do it','Life is one']
 
@@ -93,7 +88,6 @@ def show_messages(l):
     for message in l:
         print(message)
 show_messages(Messages)
-<<<<<<< HEAD
 """
 #8-10. Sending Messages: Start with a copy of your program from Exercise 8-9. Write a function called send_messages() that prints each text message and moves each message to a new list called sent_messages as it’s printed. After calling the function, print both of your lists to make sure the messages were moved correctly.
 
@@ -104,58 +98,12 @@ show_messages(Messages)
 
 
 #8-11. Archived Messages: Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the list of messages. After calling the function, print both of your lists to show that the original list has retained its messages.
-=======
 
-def send_messages(messages):
-    sent_messages = []
-    while messages:
-        message = messages.pop(0)
-        print("Sending message:", message)
-        sent_messages.append(message)
-    return sent_messages
-
-sent_messages = send_messages(Messages)
->>>>>>> 276967285c9be473fbb443d984d22a8c2511ceeb
-
-print("\nOriginal Messages:")
-show_messages(Messages)
-
-print("\nSent Messages:")
-show_messages(sent_messages)
-"""
 #8-12. Sandwiches: Write a function that accepts a list of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that’s being ordered. Call the function three times, using a different number of arguments each time.
-"""
-def make_sandwich(*items):
-    print("Sandwich con: ")
-    for item in items:
-        print("-", item)
 
-make_sandwich("Prosciutto", "Mozzarella", "Pomodoro")
-make_sandwich("Salsiccia", "Formaggio")
-make_sandwich("Hamburgher", "Bacon","Formaggio","Salsa")
-"""
 #8-13. User Profile:  Build a profile of yourself by calling build_profile(), using your first and last names and three other key-value pairs that describe you. All the values must be passed to the function as parameters. The function then must return a string such as "Eric Crow, age 45, hair brown, weight 67"
-"""
-def build_profile(first_name, last_name, age, hair_color, weight):
-    profile = f"{first_name} {last_name}, age {age}, hair {hair_color}, weight {weight}"
-    return profile
 
-my_profile = build_profile("Valerio", "Gamba", 20, "brown", 65)
-print(my_profile)
-"""
 #8-14. Cars: Write a function that stores information about a car in a dictionary. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Your function should work for a call like this one: car = make_car('subaru', 'outback', color='blue', tow_package=True) Print the dictionary that’s returned to make sure all the information was stored correctly. 
-
-def make_car(manufacturer, model_name, **kwargs):
-    car_info = {
-        "manufacturer": manufacturer,
-        "model_name": model_name
-    }
-    car_info.update(kwargs)
-    return car_info
-
-car = make_car('Subaru', 'Outback', color='blue', tow_package=True)
-print(car)
-
 
 #8-15. Printing Models: Put the functions for the example printing_models.py in a separate file called printing_functions.py. Write an import statement at the top of printing_models.py, and modify the file to use the imported functions.
 #8-16. Imports: Using a program you wrote that has one function in it, store that function in a separate file. Import the function into your main program file, and call the function using each of these approaches: import module_name from module_name import function_name from module_name import function_name as fn import module_name as mn from module_name import *
