@@ -86,9 +86,12 @@ class Food:
         self.price:str = price
         self.description:str = description
 class Menu:
-    def __init__(self,menu) -> None:
+    def __init__(self,menu:list = []) -> None:
         self.menu:str = menu
-    
+    def addFood(self) -> list:
+        self.menu.append()
+
+
 product1:Food = Food(name="Chicken",price="5€",description="Meat")
 product2:Food = Food(name="Apple",price="1€",description="Fruit")
 product3:Food = Food(name="Spaghetti",price="1,5€",description="Pasta")
